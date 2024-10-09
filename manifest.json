@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Comment blocker",
+    "description": "Blocks all comments",
+    "version": "1.0",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["block.js"]
+    }]
+  }
